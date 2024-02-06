@@ -8,10 +8,10 @@
   <script src="src/runmode-standalone.min.js"></script>
   <script src="src/python.min.js"></script>
 
-  <title>CrossCodeEval</title>
+  <title>CodeSage</title>
 
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js)
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-S3G8BGY5W5"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -20,6 +20,7 @@
 
     gtag('config', 'G-S3G8BGY5W5');
   </script>
+  -->
 
   <link href="src/css" rel="stylesheet">
 
@@ -46,50 +47,41 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">CrossCodeEval: A Diverse and Multilingual Benchmark for Cross-File Code Completion</h1>
+          <h1 class="title is-1 publication-title">CodeSage: Source Code Embedding at Scale</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://robin-y-ding-columbia.github.io/">Yangruibo Ding*</a><sup>1</sup>,</span>
+              <a href="https://dejiao2018.github.io/">Dejiao Zhang</a>,</span>
             <span class="author-block">
-              <a href="https://zijianwang.me/">Zijian Wang*</a><sup>2</sup>,</span>
+              <a href="https://wasiahmad.github.io/">Wasi Uddin Ahmad</a>,</span>
             <span class="author-block">
-              <a href="https://wasiahmad.github.io/">Wasi Uddin Ahmad*</a><sup>2</sup>,</span>
-            <span class="author-block">
-              Hantian Ding<sup>2</sup>,
-            </span>
-            <span class="author-block">
-              Ming Tan<sup>2</sup>,
+              Ming Tan,
             </span><br>
             <span class="author-block">
-              Nihal Jain<sup>2</sup>,
+              Hantian Ding,
             </span>
             <span class="author-block">
-              Murali Krishna Ramanathan<sup>2</sup>
+              Ramesh Nallapati,
             </span>
             <span class="author-block">
-              Ramesh Nallapati<sup>2</sup>
+              Dan Roth,
             </span>
             <span class="author-block">
-              Parminder Bhatia<sup>2</sup>
+              Xiaofei Ma,
             </span>
             <span class="author-block">
-              Dan Roth<sup>2</sup>
-            </span>
-            <span class="author-block">
-              Bing Xiang<sup>2</sup>
+              Bing Xiang
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Columbia University,</span>
-            <span class="author-block"><sup>2</sup>AWS AI Labs</span>
+            <span class="author-block">AWS AI Labs</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2310.11248" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://openreview.net/forum?id=vfzRRjumpX" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"></path></svg><!-- <i class="fas fa-file-pdf"></i> Font Awesome fontawesome.com -->
                   </span>
@@ -98,11 +90,20 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/amazon-science/cceval" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://github.com/amazon-science/CodeSage" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-github"></i> Font Awesome fontawesome.com -->
                   </span>
                   <span>Code</span>
+                  </a>
+              </span>
+              <!-- Model Link. -->
+              <span class="link-block">
+                <a href="https://huggingface.co/codesage" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-github"></i> Font Awesome fontawesome.com -->
+                  </span>
+                  <span>HuggingFace</span>
                   </a>
               </span>
               <!--
@@ -131,7 +132,8 @@
     </div>
   </div>
 </section>
-  
+
+
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
@@ -140,57 +142,48 @@
       </div>
       <br>
       <div class="content has-text-justified">
-<!--       <h2 class="subtitle has-text-centered"> -->
-        Existing code completion datasets such as HumanEval and MBPP mostly focus on single-file tasks, neglecting the real-world complexity of multi-file software projects. To bridge this gap, we present <span class="dnerf">CrossCodeEval</span>, a multilingual benchmark built on diverse real-world repositories in Python, Java, TypeScript, and C#. It uses a static-analysis-based method to strictly require cross-file context for accurate code completion. Experiments on leading models like CodeGen and StarCoder revealed that, while performance improves when given cross-file context, even the top models and context retrieval methods together are yet to achieve optimal performance. This demonstrates the effectiveness of CrossCodeEval, and calls for future development on models that can leverage extensive cross-file context and better code retrievers.
-<!--       </h2> -->
+        <!--       <h2 class="subtitle has-text-centered"> -->
+        TLDR
+        <!--       </h2> -->
       </div>
       <p align="center">
-        <img src="src/Cross-file-context-dataset-motivation.png" width="100%" align="middle" class="center"> <!-- To .gif format-->
+        <img src="src/fig/codesage_plus.png" width="100%" align="middle" class="center"> <!-- To .gif format-->
       </p>
 
     </div>
   </div>
 </section>
 
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- How to use. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">How to use?</h2>
-        <div class="content has-text-justified">
-          <p>
-            <span class="dnerf">CrossCodeEval</span>'s code and data are available at <a href="https://github.com/amazon-science/cceval">https://github.com/amazon-science/cceval</a><!-- on <a href="https://huggingface.co/">Huggingface</a>  🤗! -->
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-  
  <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
+    <!-- Summary. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3">Summary and Highlights</h2>
         <div class="content has-text-justified">
           <p>
-            Code completion models have made significant progress in recent years, yet current popular evaluation datasets, such as HumanEval and MBPP, predominantly focus on code completion tasks within a single file. This over-simplified setting falls short of representing the real-world software development scenario where repositories span multiple files with numerous cross-file dependencies, and accessing and understanding cross-file context is often required to complete the code correctly.
+            <b>What is <span class="dnerf">CodeSage</span>?</b><br />
+            <span class="dnerf">CodeSage</span> is a collection of encoder models for code representation, with model size ranging from
+            130M (<span class="dnerf">CodeSage-Small</span>), 356M (<span class="dnerf">CodeSage-Base</span>),
+            to 1.3B (<span class="dnerf">CodeSage-Large</span>), trained on code and text-code pairs.
           </p>
           <p>
-            To fill in this gap, we propose <span class="dnerf">CrossCodeEval</span>, a diverse and multilingual code completion benchmark that necessitates an in-depth cross-file contextual understanding to complete the code accurately. <span class="dnerf">CrossCodeEval</span> is built on a diverse set of real-world, open-sourced, permissively-licensed repositories in four popular programming languages: Python, Java, TypeScript, and C#. To create examples that strictly require cross-file context for accurate completion, we propose a straightforward yet efficient static-analysis-based approach to pinpoint the use of cross-file context within the current file.
+            <b>How is <span class="dnerf">CodeSage</span> trained?</b><br />
+            <span class="dnerf">CodeSage-Large</span> is trained on <a href="https://huggingface.co/datasets/bigcode/the-stack">the Stack dataset</a> for two stages.
+            In stage-1, we perform masked language modeling (MLM) by considering identifier deobfuscation and random token masking.
+            In stage-2, we use contrastive learning by constructing text-code pairs from the training data.
           </p>
           <p>
-            Extensive experiments on state-of-the-art code language models like CodeGen and StarCoder demonstrate that <span class="dnerf">CrossCodeEval</span> is extremely challenging when the relevant cross-file context is absent, and we see clear improvements when adding these context into the prompt. However, despite such improvements,  the pinnacle of performance remains notably unattained even with the highest-performing model,  indicating that <span class="dnerf">CrossCodeEval</span> is also capable of assessing model's capability in leveraging extensive context to make better code completion. Finally, we benchmarked various methods in retrieving cross-file context, and show that <span class="dnerf">CrossCodeEval</span> can also be used to measure the capability of code retrievers.
+            <b>How good is <span class="dnerf">CodeSage</span>?</b><br />
+            Our largest model, <span class="dnerf">CodeSage-Large</span>, outperforms StarEncoder and OpenAI-Ada-002 by relatively
+            up to 40.9% on code-to-code search, and 11.7% on text-to-code search.
           </p>
         </div>
       </div>
     </div>
   </div>
     <!--/ Abstract. -->
+
   
 </section>
 
@@ -199,18 +192,31 @@
     <!-- Method. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Dataset Construction</h2>
+        <h2 class="title is-3">Training Recipe</h2>
         <div class="content has-text-justified">
           <p>
-            We collect permissively-licensed repositories from GitHub across four programming languages: Python, Java, TypeScript, and C#. We leverage a static-analysis-based approach to identify code fragments that require cross-file context automatically. Specifically, we replace import statements with empty classes, and run static analysis to identify undefined names which locate cross-file usages.
+            Step 1 - Masked Language Modeling:
+            <ul>
+            <li> <b>Deobfuscation: </b> We use identifier deobfuscation (DOBF) which pretrains the model to predict the masked-out names of the identifiers. </li>
+              <div style="text-align: center;">
+                <img src="src/fig/dobf.png" height="500">
+              </div>
+            <li> <b>Random Masking: </b> We use the random token masking strategy, but set the masking rate to 15% to adapt to code training, as opposed to the 80-10-10 convention in BERT for text. </li>
+              <div style="text-align: center;">
+                <img src="src/fig/dobf.png" height="500">
+              </div>
+            </ul>
           </p>
-        <img src="src/dataset_construct.png" class="center">
+
           <p>
-            <br><br><b>Statistics: </b>We present the statistics of <span class="dnerf">CrossCodeEval</span>. We use the StarCoder tokenizer to compute the number of tokens.
+            Step 2 - Bimodal Contrastive Learning:
+            <ul>
+            <li> <b>Hard Negatives: </b> We consider semantically different examples whose embedding is close to the target as hard negatives. We give higher weights to these hard negatives.
+            </li>
+              <li> <b>Hard Positives: </b> We consider naturally occurring [<i>text</i>, <i>function</i>] pairs as positives. </li>
+
+            </ul>
           </p>
-        <div style="text-align: center;">
-          <img src="src/data_stat.png" width="500">
-        </div>
 
         </div>
       </div>
@@ -226,24 +232,20 @@
         <h2 class="title is-3">Main Results</h2>
         <div class="content has-text-justified">
           <p>
-            We benchmark <span class="dnerf">CrossCodeEval</span> with popular public and proprietary large language models: <a href="https://github.com/salesforce/CodeGen">CodeGen</a>, <a href="https://huggingface.co/bigcode/santacoder">SantaCoder</a>, <a href="https://huggingface.co/bigcode/starcoder">StarCoder</a>, and <a href="https://platform.openai.com/docs/models/gpt-3-5">GPT-3.5-turbo</a>. We prompt the language models in the zero-shot manner under the following three settings with different levels of cross file context.
+            We benchmark <span class="dnerf">CodeSage</span> with public encoder models for code: <a href="https://huggingface.co/microsoft/codebert-base">CodeBERT</a>, <a href="https://huggingface.co/microsoft/graphcodebert-base">GraphCodeBERT</a>, <a href="https://huggingface.co/bigcode/starencoder">StarEnCoder</a>, <a href="https://huggingface.co/microsoft/unixcoder-base">UnixCoder</a>, and <a href="https://platform.openai.com/docs/guides/embeddings">OpenAI-embedding-Ada-002</a>.
+            <br />
+            Our evaluation tasks include:
+
+            <ul>
+              <li><b>Code2code search: </b> Given a code fragment as query, retrieve other relevant code fragments. </li>
+              <li><b>NL2code search: </b> Given a piece of natural language text as query, retrieve relevant code. </li>
+              <li><b>Classification: </b> Classify code snippets by defect, complexity, and runtime error. </li>
+            </ul>
           </p>
-        <ul>
-          <li><b>Only In-File Context (baseline)</b>: We only provide code context from the current file.</li>
-          <li><b>Retrieved Cross-file Context</b>: We adopted the retrieve-and-generate (RG) framework by <a href="https://arxiv.org/abs/2303.12570">Zhang et al., 2023</a> for repository-level code completion.</li>
-          <li><b>Retrieval with Reference</b>: To estimate the upper bound impacts of cross-file context retrieval, we make use of not only the in-file context (as above), but also <em>the reference code completion</em> to retrieve cross-file context.</li>
-        </ul>
           <p>
-            In evaluating the performance of code language models, we report performance in two main categories: code match and identifier match.
+            <u>Our results show that <span class="dnerf">CodeSage</span> significantly outperforms the baselines on various tasks.</u>
           </p>
-        <ul>
-          <li><b>Code Match</b>: The code match metric directly compares the generated code with the reference and is measured using exact match (EM) and edit similarity (ES).</li>
-          <li><b>Identifier Match</b>: This metric evaluates models' ability to predict the correct application programming interfaces (APIs) in a code snippet.</li>
-        </ul>
-          <p>
-            <u>Our results show that code LMs perform poorly with only current-file context. The performance improves dramatically when the cross-file context is added to the prompts, regardless of the size of code LMs.</u>
-          </p>
-          <img src="src/main_results.png" class="center">
+          <img src="src/fig/main_results.png" class="center">
         </div>
       </div>
     </div>
@@ -257,35 +259,52 @@
     <!-- Analysis. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Analysis</h2>
+        <h2 class="title is-3">Key Insights</h2>
         <div class="content has-text-justified">
-          <center><h2 class="title is-4">Improved vs. Degraded Code Completions</h2></center>
+          <center><h2 class="title is-4">Masking Strategy</h2></center>
           <p>
-            Looking at changes in the number of correct completions (based on exact match to the references) across different prompt settings, we find all models follow a trend that the performance improves with better cross-file context. However, the variation of correct/incorrect generation is significant among different models.
+            Given an input sequence, the conventional strategy for text, used in BERT, first randomly samples a subset of its tokens,
+            of which 80% are replaced by a special token <b>[MASK]</b>,
+            10% are left unchanged, and the other 10% are replaced by random tokens from the vocabulary.
+            We find this 80-10-10 strategy is suboptimal for code, and it is more effective to simply replace all sampled tokens
+            with <b>[MASK]</b>.
           </p>
-        <img src="src/trend.png" class="center">
+        <img src="src/fig/80-10-10.png" class="center">
         </div>
 
         <div class="content has-text-justified">
-          <center><h2 class="title is-4">Identifier Overlap with Retrieved Cross-file Context</h2></center>
+          <center><h2 class="title is-4">Effectiveness of Contrastive Learning</h2></center>
           <p>
-            Identifiers are a significant part of programming language constructs that cover API mentions in source code. We find that an increased ratio of identifier overlap between the retrieved context and the reference solution generally results in higher performance, demonstrating a positive correlation. This calls for an investigation into retrieval techniques, with a particular emphasis on key terms like identifiers for cross-file context retrieval.
-          </p>
-        <img src="src/identifier_overlap.png" class="center">
-        </div>
 
-        <div class="content has-text-justified">
-          <center><h2 class="title is-4"><span class="dnerf">CrossCodeEval</span> as Code Retrieval Benchmark</h2></center>
-          <p>
-            Given the strong dependency that the correct prediction requires an accurate retrieval of relevant cross-file context, we propose to use <span class="dnerf">CrossCodeEval</span> as a code retrieval benchmark. We find that OpenAI's ada embedding generally performs the best, but its downstream generation accuracy is still suboptimal (<20 EM), calling for future development of better code retriever.
+          <ul>
+            <li> Hard Positive and Hard Negative Effectively Boost Performance. </li>
+            <li> Bimodal contrastive learning with text-code pairs outperforms dropout-based unimodal contrastive learning. </li>
+            <img src="src/fig/contrastive.png" class="center">
+          </ul>
           </p>
-        <img src="src/retrieval_bench.png" class="center">
         </div>
 
       </div>
     </div>
   </div>
     <!--/ Analysis. -->
+
+
+  <section class="section">
+  <div class="container is-max-desktop">
+    <!-- Summary. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Try our models on Huggingface!</h2>
+        <div class="content has-text-justified">
+          <p>
+          <pre><code>code here
+          </code></pre>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </section>
  
