@@ -298,7 +298,18 @@
         <h2 class="title is-3">Try our models on Huggingface!</h2>
         <div class="content has-text-justified">
           <p>
-          <pre><code>code here
+          <pre><code>from transformers import AutoModel, AutoTokenizer
+
+checkpoint = "codesage/codesage-small"
+device = "cuda"  # for GPU usage or "cpu" for CPU usage
+
+tokenizer = AutoTokenizer.from_pretrained(checkpoint, trust_remote_code=True)
+model = AutoModel.from_pretrained(checkpoint, trust_remote_code=True).to(device)
+
+inputs = tokenizer.encode("def print_hello_world():\tprint('Hello World!')", return_tensors="pt").to(device)
+embedding = model(inputs)[0]
+print(f'Dimension of the embedding: {embedding[0].size()}')
+# Dimension of the embedding: torch.Size([13, 1024])
           </code></pre>
           </p>
         </div>
