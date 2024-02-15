@@ -637,24 +637,28 @@
                 <div class="content has-text-justified">
                     <h3 class="title is-4">What is <span class="dnerf">CodeSage</span>?</h3>
                     <p>
-                        <span class="dnerf">CodeSage</span> is a collection of encoder models for code representation,
-                        with model size ranging from 130M (<span class="dnerf">CodeSage-Small</span>), 356M (<span
-                            class="dnerf">CodeSage-Base</span>),to 1.3B (<span class="dnerf">CodeSage-Large</span>),
-                        trained on code and text-code pairs.
+                        <span class="dnerf">CodeSage</span> is a family of source code embedding models with
+                        a Transformer encoder architecture that support a wide range of source code understanding tasks,
+                        and is available in three sizes: 130M (<span class="dnerf">CodeSage-Small</span>),
+                        356M (<span class="dnerf">CodeSage-Base</span>), 1.3B (<span
+                            class="dnerf">CodeSage-Large</span>).
                     </p>
                     <h3 class="title is-4">How is <span class="dnerf">CodeSage</span> trained?</h3>
                     <p>
-                        <span class="dnerf">CodeSage-Large</span> is trained on <a
-                            href="https://huggingface.co/datasets/bigcode/the-stack">the Stack dataset</a> for two
-                        stages. In stage-1, we perform masked language modeling (MLM) by considering identifier
-                        deobfuscation and random token masking. In stage-2, we use contrastive learning by constructing
-                        text-code pairs from the training data.
+                        <span class="dnerf">CodeSage</span> is trained on <a
+                            href="https://huggingface.co/datasets/bigcode/the-stack">the Stack dataset</a> in two
+                        stages. In stage-1, we perform masked language modeling (MLM) with a mix of standard
+                        masking and identifier deobfuscation. In stage-2, we use contrastive learning by constructing
+                        text-code pairs.
                     </p>
                     <h3 class="title is-4">How good is <span class="dnerf">CodeSage</span>?</h3>
                     <p>
-                        Our largest model, <span class="dnerf">CodeSage-Large</span>, outperforms StarEncoder and
-                        OpenAI-Ada-002 by relatively up to 40.9% on code-to-code search, and 11.7% on text-to-code
-                        search.
+                        Our largest model, <span class="dnerf">CodeSage-Large</span>, outperforms OpenAI
+                        text-embedding-ada-002, text-embedding-3-small, text-embedding-3-large by 41%, 144%, and 34%
+                        (relative) respectively, on code-to-code search tasks. On text-to-code search tasks, <span
+                            class="dnerf">CodeSage-Large</span> outperforms text-embedding-ada-002,
+                        text-embedding-3-small, and on par with text-embedding-3-large.
+
                     </p>
                 </div>
             </div>
