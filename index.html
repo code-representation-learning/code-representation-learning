@@ -617,7 +617,8 @@
             <h2 class="subtitle has-text-centered">
                 <span class="dnerf">CodeSage</span> embedding models generate representations that can
                 measure the semantic relatedness of source code snippets. <b>CodeSage outperforms OpenAI
-                text-embedding-ada-002, text-embedding-3-large on Code2Code search tasks, and performs on par with text-embedding-3-large
+                text-embedding-ada-002, text-embedding-3-large on Code2Code search tasks, and performs on par with
+                text-embedding-3-large
                 on NL2Code search</b>.
             </h2>
             <img src="src/fig/codesage_plus.png" width="100%" class="center">
@@ -710,8 +711,10 @@
                     <ul>
                         <li>
                             <b>Hard Negatives: </b>
-                            For each anchor within a mini-batch, hard negatives refer to those semantically different examples but are
-                            mapped close to the anchor in the representation space. We give higher weights to these hard negatives. We resort to a distance-based
+                            For each anchor within a mini-batch, hard negatives refer to those semantically different
+                            examples but are
+                            mapped close to the anchor in the representation space. We give higher weights to these hard
+                            negatives. We resort to a distance-based
                             unsupervised approximation of hard negatives proposed in <a
                                 href="https://aclanthology.org/2021.emnlp-main.467/">Zhang et al. (2021)</a>.
                         </li>
@@ -745,7 +748,8 @@
                                 href="https://huggingface.co/bigcode/starencoder">StarEncoder</a>, <a
                                 href="https://huggingface.co/microsoft/unixcoder-base">UnixCoder</a>, and <a
                                 href="https://platform.openai.com/docs/guides/embeddings">OpenAI
-                            text-embedding-ada-002, OpenAI-text-embedding-3-small, OpenAI-text-embedding-3-large</a>. Below we show the evaluation results on:
+                            text-embedding-ada-002, OpenAI-text-embedding-3-small, OpenAI-text-embedding-3-large</a>.
+                            Below we show the evaluation results on:
                         <ul>
                             <li>
                                 <b>Code2code search: </b> Given a code fragment as query, retrieve other relevant code
@@ -755,13 +759,18 @@
                                 <b>NL2code search: </b> Given a piece of natural language text as query, retrieve
                                 relevant code.
                             </li>
-<!--                            <li>-->
-<!--                                <b>Classification: </b> Classify code snippets by defect, complexity, and runtime error.-->
-<!--                            </li>-->
+                            <!--                            <li>-->
+                            <!--                                <b>Classification: </b> Classify code snippets by defect, complexity, and runtime error.-->
+                            <!--                            </li>-->
                         </ul>
                         </p>
                         <div style="text-align: center;">
-                            <img src="src/fig/main_results.png" width="90%">
+                            <img src="src/fig/code-to-code.png" width="90%">
+                            <h5>Table 1: MAP Score (%) of the zero-shot code search task.</h5>
+                        </div>
+                        <div style="text-align: center;">
+                            <img src="src/fig/text-to-code.png" width="90%">
+                            <h5>Table 2: MRR Score (%) of NL2Code search in zero-shot setting.</h5>
                         </div>
                     </div>
                 </div>
@@ -782,22 +791,28 @@
                     <div class="content has-text-justified">
                         <h3 class="title is-4">Masking Strategy</h3>
                         <p>
-                            <b>On the 80-10-10 corruption convention.</b> Given an input sequence, the conventional strategy for text, first randomly
+                            <b>On the 80-10-10 corruption convention.</b> Given an input sequence, the conventional
+                            strategy for text, first randomly
                             samples a subset of its tokens, of which 80% are replaced by a special token <b>[MASK]</b>,
                             10% are left unchanged, and the other 10% are replaced by random tokens from the vocabulary.
                             We find this 80-10-10 strategy is suboptimal for code, and it is more effective to simply
                             replace all sampled tokens with <b>[MASK]</b>.
                         </p>
                         <div style="text-align: center;">
-                            <img src="src/fig/80-10-10.png" width="86%" class="center">
+                            <img src="src/fig/80-10-10.png" width="90%" class="center">
                         </div>
+                        </br>
                         <p>
-                            <b>Random Masking & DOBF Complement Each Other.</b> DOBF promotes the model to better understand the structure of code as
-                            well as yields better shared representations between NL and PL. Simultaneously, random masking promotes the model
-                            to learn beyond identifiers, e.g., only 30% of the PL tokens in python are associated with identifiers.
+                            <b>Random Masking & DOBF Complement Each Other.</b> DOBF promotes the model to better
+                            understand the structure of code as well as yields better shared representations between NL
+                            and PL. Simultaneously, random masking promotes the model to learn beyond identifiers, e.g.,
+                            only 30% of the PL tokens in python are associated with identifiers. We explored two
+                            alternatives to leverage DOBF (D) and random masking (R) to complement each other. (1)
+                            Sequential (S): training the model with random masking first, then DOBF. (2) Parallel (P):
+                            randomly picking either DOBF or random masking for a training example.
                         </p>
                         <div style="text-align: center;">
-                            <img src="src/fig/complement.png" width="86%" class="center">
+                            <img src="src/fig/complement.png" width="85%" class="center">
                         </div>
                     </div>
                     <div class="content has-text-justified">
@@ -808,8 +823,10 @@
                             <li> Bimodal contrastive learning with text-code pairs outperforms dropout-based unimodal
                                 contrastive learning.
                             </li>
-                            <img src="src/fig/contrastive.png" width="92%" class="center">
                         </ul>
+                        <div style="text-align: center;">
+                            <img src="src/fig/contrastive.png" width="80%" class="center">
+                        </div>
                         </p>
                     </div>
 
