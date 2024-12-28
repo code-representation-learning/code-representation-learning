@@ -630,12 +630,14 @@
                     </p>
                     <h3 class="title is-4">What are the main differences between <span class="dnerf">CodeSage-V1</span> and <span class="dnerf">CodeSage-V2</span>?</h3>
                 <p>
-                    <span class="dnerf">CodeSage-V1</span> primarily relies on hand-crafted heuristics to filter the (summary, code) pairs constructed from GitHub data, 
-                    such as extracting the first sentence of a docstring as the summary and filtering out data with excessively short summaries or code snippets 
-                    (<a href="https://arxiv.org/pdf/1909.09436">Husain et al., 2019</a>; <a href="https://arxiv.org/pdf/2402.01935">Zhang et al., 2024</a>).
+                    <strong>Flexible Embedding Dimensions. </strong> <span class="dnerf">CodeSage-V2</span> supports flexible embedding sizes, thanks to Matryoshka Representation Learning.
                     <br><br>
-
-                    For this V2 model, we enhanced semantic search performance by improving the quality of the contrastive learning data through consistency filtering. 
+                    
+                    <strong>Improved Retrieval Performance. </strong><span class="dnerf">CodeSage-V1</span> primarily relies on hand-crafted heuristics to filter the (summary, code) pairs constructed from GitHub data, 
+                    such as extracting the first sentence of a docstring as the summary and filtering out data with excessively short summaries or code snippets 
+                    (<a href="https://arxiv.org/pdf/1909.09436">Husain et al., 2019</a>; <a href="https://arxiv.org/pdf/2402.01935">Zhang et al., 2024</a>). For this V2 model, we enhanced semantic search performance by
+                     improving the quality of the contrastive learning data through consistency filtering.
+                                
                     Starting from the pretrained checkpoints (trained with both Masked Language Modeling (MLM) and Deobfuscation <a href="https://arxiv.org/pdf/2402.01935">see Section 3.1</a>) 
                     from our V1 model family, 
                     we applied contrastive learning with the filtered data. Unlike the V1 model training, we extracted the initial set of (summary, code) pairs—specifically, 
@@ -702,7 +704,7 @@
                         <br
                         <div style="text-align: center;">
                             <img src="src/fig/codesage_v2_coir.png" width="99%">
-                            <h5>Table 3: CoIR benchmarking results (screenshot of <a href="https://archersama.github.io/coir/">CoIR</a> on 12/05/2024).</h5>
+                            <h5 style="text-align: center;">Table 3: CoIR benchmarking results (screenshot of <a href="https://archersama.github.io/coir/">CoIR</a> on 12/05/2024).</h5>
                         </div>
                     </div>
                 </div>
